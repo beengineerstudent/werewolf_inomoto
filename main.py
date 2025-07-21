@@ -49,7 +49,7 @@ async def main():
             SCREEN.fill(BLUE_LIGHT)
             map_data = MAP_DATA_DAY
         map = Map(MAP_DICT, map_data, 32)
-
+        map.draw()
         SCREEN.blit(LAYER, (0, 0))
         if scene == SCENE_TITLE:
             draw_title_scene()
